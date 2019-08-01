@@ -1,0 +1,213 @@
+.container-detailPage {
+  margin: 0 auto;
+
+}
+
+.film-inf {
+  display: flex;
+  padding-top: 23px;
+  font-family: "Roboto";
+  letter-spacing: 0.015em;
+  margin-bottom: 20px;
+
+  &__poster {
+    display: block;
+    background-color: rgb(183, 183, 183);
+  }
+
+  &__title {
+    font-size: 16px;
+    color: rgb(55, 44, 72);
+  }
+
+
+  &__about-title {
+    font-size: 16px;
+    color: rgb(55, 44, 72);
+  }
+
+  &__about-text {
+    font-size: 14px;
+    font-family: "Myriad Pro";
+    color: rgba(55, 44, 72, 0.541);
+    line-height: 1.286;
+  }
+
+  &__btns {
+    padding-top: 7px;
+    cursor: pointer;
+
+    &__btn {
+      font-size: 14px;
+      color: #372c48;
+    }
+
+  }
+}
+
+.detail__table {
+  border-collapse: collapse;
+  font-size: 14px;
+
+}
+
+.table {
+
+  &__col,
+  &__row {
+    padding: 9px 1px 1px 14px;
+    width: 112px;
+  }
+
+  &__row:nth-child(2n+1) {
+    background-color: #addad6;
+  }
+}
+
+
+@media (min-width:320px) {
+
+  .container-detailPage {
+    width: 85.5618%;
+  }
+
+  .film-inf {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    &__detail {
+      width: 272px;
+    }
+    &__poster {
+      width: 274px;
+      height: 403px;
+      margin-bottom: 17px;
+    }
+
+    &__title {
+      margin-bottom: 12px;
+    }
+
+
+    &__about-title {
+      margin-bottom: 11px;
+    }
+
+    &__about-text {
+      width: 260px;
+      margin-bottom: 20px;
+    }
+
+    &__btns {
+      display: block;
+      margin-bottom: 35px;
+
+      &__btn:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+
+  }
+
+  &__detail {
+    width: 272px;
+  }
+
+  .detail__table {
+    margin-bottom: 26px;
+  }
+
+  .table {
+
+    &__col:nth-child(2) {
+      width: 162px;
+    }
+
+  }
+
+
+}
+
+@media (min-width: 768px) {
+
+  .container-detailPage {
+    width: 715px;
+  }
+  .film-inf__detail {
+    width: 49.5%;
+  }
+  .film-inf {
+    justify-content: space-between;
+
+    &__poster {
+      width: 357px;
+      height: 527px;
+      margin-bottom: 0px;
+    }
+
+    &__title {
+      padding-top: 10px;
+    }
+
+    &__about-text {
+      width: 272px;
+    }
+
+    &__btns {
+      display: flex;
+
+      &__btn:not(:last-child) {
+        margin-bottom: 0;
+        margin-right: 15px;
+      }
+    }
+  }
+
+  .detail__table {
+    margin-bottom: 40px;
+  }
+
+  .table {
+
+    &__col:nth-child(2) {
+      width: 222px;
+    }
+
+  }
+
+}
+
+
+@media (min-width: 1024px) {
+
+  .container-detailPage {
+    width: 915px;
+  }
+
+
+  .film-inf {
+
+
+    &__poster {
+      width: 428px;
+      height: 630px;
+    }
+
+    &__title {
+      padding-top: 5px;
+      margin-bottom: 12px;
+    }
+
+    &__about-text {
+      width: auto;
+    }
+  }
+
+  .table {
+
+    &__col:nth-child(2) {
+      width: 340px;
+    }
+
+  }
+
+}

@@ -1,0 +1,23 @@
+.page-disactive {
+  display: none !important;
+}
+
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('../fonts/MyriadPro-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/roboto-v19-latin-regular.woff') format('woff'),
+    url('../fonts/roboto-v19-latin-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+button {
+    cursor: pointer;
+}
